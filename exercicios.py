@@ -70,12 +70,12 @@
 # a R$ 10.000 ou se ocorrer fora do horário comercial (antes das 9h ou depois das 18h). 
 # Dada uma transação como `transacao = {'valor': 12000, 'hora': 20}`, verifique se ela é suspeita.
 
-transacao = {'valor': 1200, 'hora': 10}
+# transacao = {'valor': 1200, 'hora': 10}
 
-if transacao['valor'] > 10000 or transacao['hora'] < 9 or transacao['hora'] > 18:
-    print('Transação suspeita')
-else:
-    print('Transação normal')  
+# if transacao['valor'] > 10000 or transacao['hora'] < 9 or transacao['hora'] > 18:
+#     print('Transação suspeita')
+# else:
+#     print('Transação normal')  
 
 
 
@@ -83,14 +83,39 @@ else:
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
 
+# texto = "dados dados análise análise ciência ciência ciência"
+# quebra_texto = texto.split()
+# contagem_palavras = {}
+
+# for palavra in quebra_texto:
+#     if palavra in contagem_palavras:
+#         contagem_palavras[palavra] += 1
+#     else:
+#         contagem_palavras[palavra] = 1
+
+# print(contagem_palavras)
+
 ### Exercício 7. Normalização de Dados
 # Objetivo:** Normalizar uma lista de números para que fiquem na escala de 0 a 1.
+
+
 
 ### Exercício 8. Filtragem de Dados Faltantes
 # Objetivo:** Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando
 
 ### Exercício 9. Extração de Subconjuntos de Dados
 # Objetivo:** Dada uma lista de números, extrair apenas aqueles que são pares.
+
+numero = (4,6,2,7,8,2,8,446,646,689,563,578,34)
+numero_par = []
+
+for par in numero:
+    if par % 2 == 0:
+        numero_par.append(par)  
+    else:
+        pass
+
+print(numero_par)
 
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
@@ -99,6 +124,8 @@ else:
 
 ### Exercício 11. Leitura de Dados até Flag
 # Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
+
+
 
 ### Exercício 12. Validação de Entrada
 # Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
