@@ -34,11 +34,35 @@
 # como `log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}`, 
 # escreva um programa que imprima a mensagem se a severidade for 'ERROR'.
 
+# log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}
+
+# for registro in log.values():
+#     if registro == 'ERROR':
+#         print('Houve um erro')
+#     else:
+#         pass
+
+
 ### Exercício 4: Validação de Dados de Entrada
 # Antes de processar os dados de usuários em um sistema de recomendação, 
 # você precisa garantir que cada usuário tenha idade entre 18 e 65 anos e tenha 
 # fornecido um email válido. Escreva um programa que valide essas condições 
 # e imprima "Dados de usuário válidos" ou o erro específico encontrado.
+
+idade_usuario = int(input('Digite a idade: '))
+email_usuario = input('Digite o email: ')
+email_validos = ('gmail.com', 'yahoo.com', 'outlook.com', 'hotmail.com')
+validador = email_usuario.split('@')
+
+if idade_usuario > 17 and idade_usuario < 66:
+    for e in email_validos:
+        e == validador[1]
+        print('Dados de usuário válidos')
+        break
+else:
+    print('Dados inválidos')
+
+
 
 ### Exercício 5: Detecção de Anomalias em Dados de Transações
 # Você está trabalhando em um sistema de detecção de fraude e precisa identificar 
